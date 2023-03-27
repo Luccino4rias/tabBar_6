@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: MyHomePage(),
     );
@@ -37,22 +37,22 @@ class _MyHomePageState extends State<MyHomePage> {
             isScrollable: true,
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(100), // Creates border
-                color: Colors.greenAccent), //Change background color from here
+                color: Color(0xff8cde97)), //Change background color from here
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
-              Tab(icon: Icon(Icons.add_a_photo)),
+              Tab(icon: Icon(Icons.report_problem)),
+              Tab(icon: Icon(Icons.phonelink_lock)),
+              Tab(icon: Icon(Icons.store)),
+              Tab(icon: Icon(Icons.perm_identity)),
             ],
           ),
           title: Text('Tabs Demo'),
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
-            Icon(Icons.add_a_photo, size: 350),
+            Icon(Icons.report_problem, size: 350),
+            Icon(Icons.phonelink_lock, size: 350),
+            Icon(Icons.store, size: 350),
+            Icon(Icons.perm_identity, size: 350),
           ],
         ),
       ),
